@@ -19,7 +19,7 @@ To mark a heading, use equal signs(=) below the text.
     This is a heading.
     ==================
 
-Result:
+Result:  
 This is a heading.
 ==================
 
@@ -30,7 +30,7 @@ To mark a sub-heading, use hyphens(-) below the text.
     This is a sub-heading.
     ----------------------
 
-Result:
+Result:  
 This is a sub-heading.
 ----------------------
 
@@ -43,7 +43,7 @@ Paragraphs are separated by a blank line.
     This is the second paragraph.
     Without a blank line, it's in the same paragraph.
 
-Result:
+Result:  
 This is the first paragraph.
 
 This is the second paragraph.
@@ -58,7 +58,7 @@ A line break is marked by two spaces at the end.
     Without two spaces, the line continues.
     Like so.
 
-Result:
+Result:  
 This is the first line  
 and this is the next line.
 Without two spaces, the line continues.
@@ -74,8 +74,7 @@ To use a horizontal line, use any of the following
     - - -  
   
 
-Result:
-
+Result:  
 ***
 * * *
 ---
@@ -88,7 +87,7 @@ To use bold letters, wrap the text in two asterisks(**) or two underscores(__).
     The following word is in **bold**.
     The next word is also in __bold__.
 
-Result:
+Result:  
 The following word is in **bold**.  
 The next word is also in __bold__.
 
@@ -97,7 +96,7 @@ To use italic letters, wrap the text in single asterisk(*) or single underscore(
     The following word is in *italic*.
     The next word is also in _italic_.
 
-Result:
+Result:  
 The following word is in *italic*.  
 The next word is also in _italic_.
 
@@ -105,14 +104,14 @@ To use a strikethrough, wrap the text in two tildes(~~).
 
     The following word has a ~~strikethrough~~.
   
-Result:
+Result:  
 The following word has a ~~strikethrough~~.
 
 To use a monospace, wrap the text in a backquote(`).
 
     The following word is in `mono space   `.
 
-Result:
+Result:  
 The following word is in `mono space   `.
 
 2.9 code block
@@ -123,7 +122,7 @@ To use a code block, use any of the following;
 2. `<pre><code>your code</code></pre>`
 3. triple back quotes (```)
 
-Result:
+Result:  
 This is plain text.
 
     This is a code block.
