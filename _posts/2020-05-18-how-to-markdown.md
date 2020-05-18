@@ -293,11 +293,11 @@ You can also set alignment by using `:`.
 To use links, denote the keyword in brackets `[ ]` and the url in parantheses `( )`.
 `Code:`
 
-    The following word has a [link](www.google.com) to google.
+    The following word has a [link](www.google.com) to google.  
     You can also write an optional title to your [link](www.google.com "This is google.").
 
 `Output:`
-The following word has a [link](www.google.com) to google.
+The following word has a [link](www.google.com) to google.  
 You can also write an optional title to your [link](www.google.com "This is google.").
 
 -------
@@ -307,9 +307,9 @@ You can also write an optional title to your [link](www.google.com "This is goog
 To mark an image, denote alternative text in brackets `[ ]` and the image url in parantheses `( )`.
 `Code:`
 
-    [Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)
+    [Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)  
     [Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png "This is the Google logo.")
     
 `Output:`
-[Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)
+[Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)  
 [Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png "This is the Google logo.")
