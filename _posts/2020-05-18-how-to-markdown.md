@@ -67,7 +67,7 @@ This is the second paragraph.
 Without a blank line, it's in the same paragraph.
 
 ### 2.2.2 Line break
---------------
+
 A line break is marked by two spaces at the end.
 
     This is the first line  
@@ -81,7 +81,7 @@ Without two spaces, the line continues.
 Like so.
 
 ### 2.2.3 Horizontal line
---------------
+
 To use a horizontal line, use any of the following
 
     ***  
@@ -126,7 +126,7 @@ The following word has a ~~strikethrough~~.
 
 ### 2.3.4 Monospace
 
-To use a monospace, wrap the text in a backquote ` ` `.
+To use a monospace, wrap the text in a backquote `` ` ``.
 
     The following word is in `   mono space        `.
 
@@ -139,7 +139,7 @@ To use a code block, use any of the following to begin your code.
 
 1. four spaces(or one tab)
 2. `<pre><code>your code</code></pre>`
-3. triple back quotes ````
+3. triple back quotes ```` ``` ````
 
 This is plain text.
 
