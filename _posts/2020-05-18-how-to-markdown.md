@@ -3,7 +3,7 @@ title: How To Markdown
 date: 2020-05-18 10:40
 categories: web howto markdown
 ---
-__note. This page is a work in progess.__
+*note. This page is a work in progess.*
 
 1.0 What is Markdown
 =====================
@@ -52,9 +52,13 @@ A line break is marked by two spaces at the end.
 
     This is the first line  
     and this is the next line.
+    Without two spaces, the like continues.
+    Like so.
 
 This is the first line  
 and this is the next line.
+Without two spaces, the like continues.
+Like so.
 
 2.5 horizontal line
 --------------
@@ -104,8 +108,8 @@ The following word is in `mono space   `.
 --------------
 To use a code block, use any of the following;
 
-1. 4 spaces(or 1 tab)
-2. <pre><code>your code</code></pre>
+1. four spaces(or one tab)
+2. `<pre><code>your code</code></pre>`
 3. triple back quotes (```)
 
 This is plain text.
