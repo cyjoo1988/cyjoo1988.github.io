@@ -12,6 +12,8 @@ categories: web howto markdown
 * 2.3 Text emphasis  
 * 2.4 Data representation  
 
+-------
+
 # 1 What is Markdown
 
 Markdown is a lightweight language that transforms simple, plain text to HTML and others.
@@ -30,6 +32,8 @@ To mark a heading, use equal signs `=` below the text.
 This is a heading.
 ==================
 
+-------
+
 ### 2.1.2 Sub-heading
 
 To mark a sub-heading, use hyphens `-` below the text.
@@ -41,6 +45,8 @@ To mark a sub-heading, use hyphens `-` below the text.
 
 This is a sub-heading.
 ----------------------
+
+-------
 
 ### 2.1.3 Explicit headers
 
@@ -61,6 +67,8 @@ To use explicit headers, use hash-tags `#` .
 ##### This is h5.
 ###### THis is h6.
 
+-------
+
 ## 2.2 Page layout
 ### 2.2.1 Paragraphs
 
@@ -77,6 +85,8 @@ This is the first paragraph.
 This is the second paragraph.  
 Without a blank line, it's in the same paragraph.
 
+-------
+
 ### 2.2.2 Line break
 
 A line break is marked by two spaces at the end.
@@ -91,6 +101,8 @@ This is the first line
 and this is the next line.
 Without two spaces, the line continues.
 Like so.
+
+-------
 
 ### 2.2.3 Horizontal line
 
@@ -119,6 +131,8 @@ To use bold letters, wrap the text in two asterisks `**` or two underscores `__`
 The following word is in **bold**.  
 The next word is also in __bold__.
 
+-------
+
 ### 2.3.2 Italic letters
 
 To use italic letters, wrap the text in single asterisk `*` or single underscore `_`.
@@ -130,6 +144,8 @@ To use italic letters, wrap the text in single asterisk `*` or single underscore
 The following word is in *italic*.  
 The next word is also in _italic_.
 
+-------
+
 ### 2.3.3 Strikethrough
 
 To use a strikethrough, wrap the text in two tildes `~~` .
@@ -138,6 +154,8 @@ To use a strikethrough, wrap the text in two tildes `~~` .
 
 `Output:`  
 The following word has a ~~strikethrough~~.
+
+-------
 
 ### 2.3.4 Monospace
 
@@ -157,6 +175,7 @@ You can escape a backquote by wraping it with more backquotes.
 This is a backquote '' ' ''.
 These are backquotes '''' '' ''''.
 
+-------
 
 ## 2.4 Data representation
 ### 2.4.1 Code block
@@ -188,6 +207,8 @@ alert('This code is in javascript.');
 System.out.println("This code is in java");
 ```
 
+-------
+
 ### 2.4.2 Block quotes
 
 To use block quotes, begin your quotes with `>`.
@@ -201,6 +222,8 @@ To use block quotes, begin your quotes with `>`.
 >    > Block quotes can be nested.
 >    >    > Use four spaces or one tab within the quote to mark a nested block quote.
 
+-------
+
 ### 2.4.3 Ordered lists
 
 To use ordered lists, begin your text with a number and a dot.
@@ -213,6 +236,8 @@ To use ordered lists, begin your text with a number and a dot.
 3. Second item in the list.
 2. The number you type does not designate its sequence. It can be any numbers.
 
+-------
+
 ### 2.4.4 Unordered lists
 
 To use unordered lists, begin your text using any of the following in any sequence `*` `+` `-`.
@@ -224,6 +249,8 @@ To use unordered lists, begin your text using any of the following in any sequen
 * Top item
     + Middle item
         - Bottom item
+
+-------
 
 ### 2.4.5 Tables
 
@@ -243,6 +270,8 @@ You can also set alignment by using `:`.
 |row1|data 1.1|data 1.2|
 |row2|data 2.1|data 2.2|
 
+-------
+
 ## 2.4.6 Links
 
 To use links, denote the keyword in brackets `[ ]` and the url in parantheses `( )`.
@@ -252,6 +281,8 @@ To use links, denote the keyword in brackets `[ ]` and the url in parantheses `(
 
 The following word has a [link](www.google.com) to google.
 You can also write an optional title to your [link](www.google.com "This is google.").
+
+-------
 
 ### 2.4.7 Images
 
