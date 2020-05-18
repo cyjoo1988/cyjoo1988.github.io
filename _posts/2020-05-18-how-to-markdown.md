@@ -5,7 +5,12 @@ categories: web howto markdown
 ---
 *note. This page is a work in progess.*
 # 0 Index
-
+1. What is Markdown
+2. Syntax
+* 2.1 Titles and subtitles  
+* 2.2 Page layout  
+* 2.3 Text emphasis  
+* 2.4 Data representation  
 
 # 1 What is Markdown
 
@@ -20,6 +25,7 @@ To mark a heading, use equal signs `=` below the text.
     This is a heading.
     ==================
 
+`Output:`  
 This is a heading.
 ==================
 
@@ -30,6 +36,7 @@ To mark a sub-heading, use hyphens `-` below the text.
     This is a sub-heading.
     ----------------------
 
+`Output:`  
 This is a sub-heading.
 ----------------------
 
@@ -42,8 +49,9 @@ To use explicit headers, use hash-tags `#` .
     ### This is h3.
     #### This is h4.
     ##### This is h5.
-    ###### THis is h6.
+    ###### This is h6.
 
+`Output:`  
 # This is h1.
 ## This is h2.
 ### This is h3.
@@ -58,12 +66,13 @@ Paragraphs are separated by a blank line.
 
     This is the first paragraph.
   
-    This is the second paragraph.
+    This is the second paragraph.  
     Without a blank line, it's in the same paragraph.
 
+`Output:`  
 This is the first paragraph.
 
-This is the second paragraph.
+This is the second paragraph.  
 Without a blank line, it's in the same paragraph.
 
 ### 2.2.2 Line break
@@ -75,6 +84,7 @@ A line break is marked by two spaces at the end.
     Without two spaces, the line continues.
     Like so.
 
+`Output:`  
 This is the first line  
 and this is the next line.
 Without two spaces, the line continues.
@@ -88,8 +98,8 @@ To use a horizontal line, use any of the following
     * * *  
     ---  
     - - -  
-  
 
+`Output:`  
 ***
 * * *
 ---
@@ -103,6 +113,7 @@ To use bold letters, wrap the text in two asterisks `**` or two underscores `__`
     The following word is in **bold**.
     The next word is also in __bold__.
 
+`Output:`  
 The following word is in **bold**.  
 The next word is also in __bold__.
 
@@ -113,6 +124,7 @@ To use italic letters, wrap the text in single asterisk `*` or single underscore
     The following word is in *italic*.
     The next word is also in _italic_.
 
+`Output:`  
 The following word is in *italic*.  
 The next word is also in _italic_.
 
@@ -121,7 +133,8 @@ The next word is also in _italic_.
 To use a strikethrough, wrap the text in two tildes `~~` .
 
     The following word has a ~~strikethrough~~.
-  
+
+`Output:`  
 The following word has a ~~strikethrough~~.
 
 ### 2.3.4 Monospace
@@ -138,6 +151,7 @@ You can escape a backquote by wraping it with more backquotes.
     This is a backquote '' ' ''.
     These are backquotes '''' '' ''''.
 
+`Output:`  
 This is a backquote '' ' ''.
 These are backquotes '''' '' ''''.
 
@@ -145,18 +159,19 @@ These are backquotes '''' '' ''''.
 ## 2.4 Data representation
 ### 2.4.1 Code block
 
-To use a code block, use any of the following to begin your code.
+To use a code block, you can use;
 
-1. four spaces(or one tab)
-2. `<pre><code>your code</code></pre>`
-3. triple back quotes ```` ``` ````
+1. four spaces(or one tab) at the beginning of each line;
+2. wrap your code as follows; `<pre><code>your code</code></pre>`
+3. wrap your code in triple back quotes ```` ``` ````
 
 This is plain text.
 
     This is a code block.
-    Code block runs until it meets a plain text.
+    It is advised to separate plain text and code blocks with at least one blank line.
 
 Back to plain text.  
+
 You can also note the specific language of the code to enable syntax highlighting.
 
 ```html
@@ -177,11 +192,12 @@ To use block quotes, begin your quotes with `>`.
 
     > This is a block quotes.
     >    > Block quotes can be nested.
-    >    >    > Use four spaces or one tab to mark a nested block quote.
+    >    >    > Use four spaces or one tab within the quote to mark a nested block quote.
 
+`Output:`
 > This is a block quotes.
 >    > Block quotes can be nested.
->    >    > Use four spaces or one tab to mark a nested block quote.
+>    >    > Use four spaces or one tab within the quote to mark a nested block quote.
 
 ### 2.4.3 Ordered lists
 
@@ -212,7 +228,7 @@ To use unordered lists, begin your text using any of the following in any sequen
 To mark a table, use `|` to separate columns,  
 use  three `-` or more to separate heders,  
 use linebreak to separate any other rows.  
-You can also set alignment by using `:` under your headers.
+You can also set alignment by using `:`.
 
 
     |Header|Col1|Col2|
@@ -221,7 +237,7 @@ You can also set alignment by using `:` under your headers.
     |row2|data 2.1|data 2.2|
 
 |Header|Column 1|Column 2|
-|----|--------|--------|
+|:---|:------:|-------:|
 |row1|data 1.1|data 1.2|
 |row2|data 2.1|data 2.2|
 
