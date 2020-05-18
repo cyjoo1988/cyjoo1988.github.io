@@ -26,6 +26,7 @@ To mark a heading, use equal signs `=` below the text.
     ==================
 
 `Output:`  
+
 This is a heading.
 ==================
 
@@ -37,6 +38,7 @@ To mark a sub-heading, use hyphens `-` below the text.
     ----------------------
 
 `Output:`  
+
 This is a sub-heading.
 ----------------------
 
