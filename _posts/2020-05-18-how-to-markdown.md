@@ -130,7 +130,17 @@ To use a monospace, wrap the text in a backquote `` ` ``.
 
     The following word is in `   mono space        `.
 
+`Output:`  
 The following word is in `   mono space        `.
+
+You can escape a backquote by wraping it with more backquotes.
+
+    This is a backquote '' ' ''.
+    These are backquotes '''' '' ''''.
+
+This is a backquote '' ' ''.
+These are backquotes '''' '' ''''.
+
 
 ## 2.4 Data representation
 ### 2.4.1 Code block
@@ -166,12 +176,12 @@ System.out.println("This code is in java");
 To use block quotes, begin your quotes with `>`.
 
     > This is a block quotes.
-    >    > Block quotes can be layered.
-    >    >    > Use four spaces or one tab to leyer a block quote.
+    >    > Block quotes can be nested.
+    >    >    > Use four spaces or one tab to mark a nested block quote.
 
 > This is a block quotes.
->    > Block quotes can be layered.
->    >    > Use four spaces or one tab to leyer a block quote.
+>    > Block quotes can be nested.
+>    >    > Use four spaces or one tab to mark a nested block quote.
 
 ### 2.4.3 Ordered lists
 
@@ -187,7 +197,7 @@ To use ordered lists, begin your text with a number and a dot.
 
 ### 2.4.4 Unordered lists
 
-To use unordered lists, begin your text using any of the following in any sequence.
+To use unordered lists, begin your text using any of the following in any sequence `*` `+` `-`.
 
     * Top item
         + Middle item
