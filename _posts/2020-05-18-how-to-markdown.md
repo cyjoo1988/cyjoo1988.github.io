@@ -1,9 +1,9 @@
 ---
 title: How To Markdown
-date: 2020-05-18 10:15
-categories: web, howto, markdown
+date: 2020-05-18 10:40
+categories: web howto markdown
 ---
-* note. This page is a work in progess.
+__note. This page is a work in progess.__
 
 1.0 What is Markdown
 =====================
@@ -59,6 +59,7 @@ and this is the next line.
 2.5 horizontal line
 --------------
 To use a horizontal line, use any of the following
+
     ***  
     * * *  
     ---  
@@ -93,11 +94,11 @@ To use a strikethrough, wrap the text in two tildes(~~).
   
 The following word has a ~~strikethrough~~.
 
-To use a monospace, wrap the text in a backquote(``).
+To use a monospace, wrap the text in a backquote(`).
 
-    The following word is in `mono space   '.
+    The following word is in `mono space   `.
   
-The following word is in `mono space   '.
+The following word is in `mono space   `.
 
 2.9 code block
 --------------
@@ -105,7 +106,7 @@ To use a code block, use any of the following;
 
 1. 4 spaces(or 1 tab)
 2. <pre><code>your code</code></pre>
-3. triple back quotes (````)
+3. triple back quotes (```)
 
 This is plain text.
 
