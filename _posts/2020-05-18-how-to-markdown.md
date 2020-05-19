@@ -298,7 +298,7 @@ in any sequence `*` `+` `-`.
 ### 2.4.5 Tables
 
 To mark a table, use `|` to separate columns,  
-use  three `-` or more to separate heders,  
+use  three `-` or more to separate headers,  
 use linebreak to separate any other rows.  
 You can also set alignment by using `:`.  
 `Code:`  
@@ -309,6 +309,7 @@ You can also set alignment by using `:`.
     |row2|data 2.1|data 2.2|
 
 `Output:`  
+
 |Header|Column 1|Column 2|
 |:---|:------:|-------:|
 |row1|data 1.1|data 1.2|
@@ -323,19 +324,17 @@ and the url in parantheses `( )`.
 `Code:`  
 
     The following word has a [link](www.google.com) to google.  
-    You can also write an optional title to your  
-    [link](www.google.com "This is google.").
+    You can also write an optional title to your [link](www.google.com "This is google.").
 
 `Output:`  
 The following word has a [link](www.google.com) to google.  
-You can also write an optional title to your  
-[link](www.google.com "This is google.").
+You can also write an optional title to your [link](www.google.com "This is google.").
 
 -------
 
 ### 2.4.7 Images
 
-To mark an image, denote alternative text in brackets `[ ]` 
+To mark an image, denote alternative text in brackets `[ ]`  
 and the image url in parantheses `( )`.  
 `Code:`  
 
@@ -347,5 +346,7 @@ and the image url in parantheses `( )`.
 [Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png "This is the Google logo.")
 
 ***
+
 **END OF DOCUMENT**
+
 ***
