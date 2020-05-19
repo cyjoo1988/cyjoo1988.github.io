@@ -210,8 +210,32 @@ This is plain text.
 Back to plain text.  
 
 You can also note the specific language of the code  
-to enable syntax highlighting.
+to enable syntax highlighting.  
+`Code:`  
 
+    ```html
+    <div>
+        <a href="" _blank id="someId">This code is in html.</a>
+    </div>
+    ```
+
+    ```javascript
+    function someFunction() {
+        var str = 'This code is in javascript.';
+        alert(str);
+    }
+    ```
+
+    ```java
+    public class SomeClass {
+        public static void main(String[] args) {
+            String str = "This code is in java.";
+            System.out.println(str);
+        }
+    }
+    ```
+
+`Output:`  
 `HTML`  
 
 ```html
