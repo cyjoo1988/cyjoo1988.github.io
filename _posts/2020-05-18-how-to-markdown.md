@@ -358,16 +358,17 @@ You can also write an optional title to your [link](www.google.com "This is goog
 
 ### 2.4.7 Images
 
-To mark an image, denote alternative text in brackets `[ ]`  
+To mark an image, begin with an `!` ,  
+denote alternative text in brackets `[ ]`  
 and the image url in parantheses `( )`.  
 `Code:`  
 
-    [Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)  
-    [Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png "This is the Google logo.")
+    ![Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)  
+    ![Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png "This is the Google logo.")
     
 `Output:`  
-[Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)  
-[Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png "This is the Google logo.")
+![Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)  
+![Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png "This is the Google logo.")
 
 ***
 
