@@ -179,12 +179,12 @@ The following word is in `   mono space        `.
 You can escape a backquote by wraping it with more backquotes.  
 `Code:`  
 
-    This is a backquote '' ' ''.
-    These are backquotes '''' '' ''''.
+    This is a backquote `` ` ``.  
+    These are backquotes ```` `` ````.
 
 `Output:`  
-This is a backquote '' ' ''.
-These are backquotes '''' '' ''''.
+This is a backquote `` ` ``.  
+These are backquotes ```` `` ````.
 
 -------
 
