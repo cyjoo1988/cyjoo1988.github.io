@@ -206,16 +206,32 @@ Back to plain text.
 
 You can also note the specific language of the code to enable syntax highlighting.
 
+`html`  
+
 ```html
-<a href="">This code is in html.</a>
+<div>
+    <a href="" _blank id="someId">This code is in html.</a>
+</div>
 ```
+
+`JS`  
 
 ```javascript
-alert('This code is in javascript.');
+function someFunction() {
+    var str = 'This code is in javascript.';
+    alert(str);
+}
 ```
 
+`Java` 
+
 ```java
-System.out.println("This code is in java");
+public class SomeClass {
+    public static void main(String[] args) {
+        String str = "This code is in java.";
+        System.out.println(str);
+    }
+}
 ```
 
 -------
