@@ -176,8 +176,8 @@ To use a monospace, wrap the text in a backquote `` ` ``.
 `Output:`  
 The following word is in `   mono space        `.
 
-You can escape a backquote by wraping it with more backquotes.
-`Code:`
+You can escape a backquote by wraping it with more backquotes.  
+`Code:`  
 
     This is a backquote '' ' ''.
     These are backquotes '''' '' ''''.
