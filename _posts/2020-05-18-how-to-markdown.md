@@ -206,7 +206,7 @@ Back to plain text.
 
 You can also note the specific language of the code to enable syntax highlighting.
 
-`html`  
+`HTML`  
 
 ```html
 <div>
@@ -292,7 +292,7 @@ use linebreak to separate any other rows.
 You can also set alignment by using `:`.  
 `Code:`  
 
-    |Header|Col1|Col2|
+    |Header|Column 1|Column 2|
     |:---|:------:|-------:|
     |row1|data 1.1|data 1.2|
     |row2|data 2.1|data 2.2|
