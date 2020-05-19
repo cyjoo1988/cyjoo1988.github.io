@@ -236,7 +236,6 @@ to enable syntax highlighting.
     ```
 
 `Output:`  
-`HTML`  
 
 ```html
 <div>
@@ -244,16 +243,12 @@ to enable syntax highlighting.
 </div>
 ```
 
-`JS`  
-
 ```javascript
 function someFunction() {
     var str = 'This code is in javascript.';
     alert(str);
 }
 ```
-
-`Java` 
 
 ```java
 public class SomeClass {
@@ -292,13 +287,13 @@ To use ordered lists, begin your text with a number and a dot.
     1. First item in the list.
     3. Second item in the list.
     2. The number you type does not mean its sequence.  
-    It can be any numbers.
+    It can be any number.
 
 `Output:`  
 1. First item in the list.
 3. Second item in the list.
 2. The number you type does not designate its sequence.  
-It can be any numbers.
+It can be any number.
 
 -------
 
@@ -344,7 +339,7 @@ You can also set alignment by using `:`.
 ## 2.4.6 Links
 
 To use links, denote the keyword in brackets `[ ]`  
-and the url in parantheses `( )`.  
+and the url in parentheses `( )`.  
 `Code:`  
 
     The following word has a [link](www.google.com) to google.  
@@ -360,7 +355,7 @@ You can also write an optional title to your [link](www.google.com "This is goog
 
 To mark an image, begin with an `!` ,  
 denote alternative text in brackets `[ ]`  
-and the image url in parantheses `( )`.  
+and the image url in parentheses `( )`.  
 `Code:`  
 
     ![Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)  
