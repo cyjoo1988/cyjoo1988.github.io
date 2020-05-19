@@ -4,21 +4,21 @@ date: 2020-05-19 10:00
 categories: web howto markdown
 ---
 
-# 0 Index
+# 0. Index
 1. What is Markdown
 2. Syntax
-* 2.1 Titles and subtitles  
-* 2.2 Page layout  
-* 2.3 Text emphasis  
-* 2.4 Data representation  
+  * 2.1 Titles and subtitles  
+  * 2.2 Page layout  
+  * 2.3 Text emphasis  
+  * 2.4 Data representation  
 
 -------
 
-# 1 What is Markdown
+# 1. What is Markdown
 
 Markdown is a lightweight language that transforms simple, plain text to HTML and others.
 
-# 2 Syntax
+# 2. Syntax
 ## 2.1 Titles and subtitles
 ### 2.1.1 Heading
 
