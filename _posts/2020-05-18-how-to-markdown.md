@@ -120,11 +120,12 @@ To use a horizontal line, use any of the following
     - - -  
 
 `Output:`  
+
 ***
 * * *
 ---
 - - -
-  
+
 ## 2.3 Text emphasis
 ### 2.3.1 Bold letters
 
