@@ -16,7 +16,8 @@ categories: web howto markdown
 
 # 1. What is Markdown
 
-Markdown is a lightweight language that transforms simple, plain text to HTML and others.
+Markdown is a lightweight language that transforms  
+simple, plain text to HTML and others.
 
 # 2. Syntax
 ## 2.1 Titles and subtitles
@@ -129,7 +130,8 @@ To use a horizontal line, use any of the following
 ## 2.3 Text emphasis
 ### 2.3.1 Bold letters
 
-To use bold letters, wrap the text in two asterisks `**` or two underscores `__` .  
+To use bold letters, wrap the text in two asterisks `**`  
+or two underscores `__` .  
 `Code:`  
 
     The following word is in **bold**.
@@ -143,7 +145,8 @@ The next word is also in __bold__.
 
 ### 2.3.2 Italic letters
 
-To use italic letters, wrap the text in single asterisk `*` or single underscore `_`.  
+To use italic letters, wrap the text in single asterisk `*`  
+or single underscore `_`.  
 `Code:`  
 
     The following word is in *italic*.
@@ -201,11 +204,13 @@ To use a code block, you can use;
 This is plain text.
 
     This is a code block.
-    It is advised to separate plain text and code blocks with at least one blank line.
+    It is advised to separate plain text and code blocks  
+    with at least one blank line.
 
 Back to plain text.  
 
-You can also note the specific language of the code to enable syntax highlighting.
+You can also note the specific language of the code  
+to enable syntax highlighting.
 
 `HTML`  
 
@@ -244,12 +249,14 @@ To use block quotes, begin your quotes with `>`.
 
     > This is a block quote.
     >    > Block quotes can be nested.
-    >    >    > Use four spaces or one tab within the quote followed by > to mark a nested block quote.
+    >    >    > Use four spaces or one tab within the quote  
+    >    >    > followed by > to mark a nested block quote.
 
 `Output:`  
 > This is a block quote.
 >    > Block quotes can be nested.
->    >    > Use four spaces or one tab within the quote followed by > to mark a nested block quote.
+>    >    > Use four spaces or one tab within the quote  
+>    >    > followed by > to mark a nested block quote.
 
 -------
 
@@ -260,18 +267,21 @@ To use ordered lists, begin your text with a number and a dot.
 
     1. First item in the list.
     3. Second item in the list.
-    2. The number you type does not mean its sequence. It can be any numbers.
+    2. The number you type does not mean its sequence.  
+    It can be any numbers.
 
 `Output:`  
 1. First item in the list.
 3. Second item in the list.
-2. The number you type does not designate its sequence. It can be any numbers.
+2. The number you type does not designate its sequence.  
+It can be any numbers.
 
 -------
 
 ### 2.4.4 Unordered lists
 
-To use unordered lists, begin your text using any of the following in any sequence `*` `+` `-`.  
+To use unordered lists, begin your text using any of the following  
+in any sequence `*` `+` `-`.  
 `Code:`  
 
     * Top item
@@ -308,21 +318,25 @@ You can also set alignment by using `:`.
 
 ## 2.4.6 Links
 
-To use links, denote the keyword in brackets `[ ]` and the url in parantheses `( )`.  
+To use links, denote the keyword in brackets `[ ]`  
+and the url in parantheses `( )`.  
 `Code:`  
 
     The following word has a [link](www.google.com) to google.  
-    You can also write an optional title to your [link](www.google.com "This is google.").
+    You can also write an optional title to your  
+    [link](www.google.com "This is google.").
 
 `Output:`  
 The following word has a [link](www.google.com) to google.  
-You can also write an optional title to your [link](www.google.com "This is google.").
+You can also write an optional title to your  
+[link](www.google.com "This is google.").
 
 -------
 
 ### 2.4.7 Images
 
-To mark an image, denote alternative text in brackets `[ ]` and the image url in parantheses `( )`.  
+To mark an image, denote alternative text in brackets `[ ]` 
+and the image url in parantheses `( )`.  
 `Code:`  
 
     [Google](https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png)  
