@@ -22,4 +22,4 @@ layout: post
    3. 결론 (정리)
 
 ##1. Clean Code
->    Let there be code
+>    *Let there be code*
