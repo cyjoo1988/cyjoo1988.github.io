@@ -45,32 +45,52 @@ Oracle automatically fills the empty space with left-padding.
 When the input value is longer than the fixed length,  
 Oracle returns an error.  
 
-ex)  
-* DATA TYPE: `CHAR(3)`  
-* INPUT1 : `A`  
-* RESULT1: `A  `  
----
-* INPUT2 : `ABC`
-* RESULT2: `ABC`
----
-* INPUT3 : `ABCD`
-* RESULT3: ORA-12899: value too large for column
-
 **VARCHAR2**  
 `VARCHAR2` type has a variable length for any rows of the table.  
+*You can check the byte size of a column with `vsize(column_name)` function*
+
 This means when the input value for this column is shorter than the fixed length,  
 Oracle resizes the column of that specific row to the size of the input.  
 However, when the input value is longer than the initial length,  
 Oracle returns the same error as in `CHAR` .  
 
-ex)  
+```SQL
+CREATE TABLE test_char (
+   test_case NUMBER,
+   char_type CHAR(3),
+   varchar_type VARCHAR2(3)
+);
+
+INSERT INTO test_char VALUES (1, 'A', 'A');
+INSERT INTO test_char VALUES (2, 'BBB', 'BBB');
+SELECT char_type, vsize(char_type), varchar_type, vsize(varchar_type) from test_char;
+```
+
+`OUTPUT:`  
+
+|CHAR_TYPE|VSIZE(CHAR_TYPE)|VARCHAR_TYPE|VSIZE(VARCHAR_TYPE)|
+|---------|----------------|------------|-------------------|
+|A|3|A|1|
+|BBB|3|BBB|3|
+
+
+---
+
+```SQL
+INSERT INTO test_char VALUES (3, 'BBBB', 'BBBB'); 
+```
+`OUTPUT:`  
+ORA-12899: value too large for column
+    
+    
+
 * DATA TYPE: `VARCHAR(3)`  
-* INPUT1 : `A`  
+* INPUT1: `A`  
 * RESULT1: `A`  
 ---
-* INPUT2 : `ABC`
+* INPUT2: `ABC`
 * RESULT2: `ABC`
 ---
-* INPUT3 : `ABCD`
+* INPUT3: `ABCD`
 * RESULT3: ORA-12899: value too large for column
 
