@@ -24,12 +24,12 @@ Oracle supports data types that fall into following categories:
 Character data types store alphanumeric values.   
 Note that character sets (e.g. ASCII, UTF-8) are already designated when creating the database.  
 
-|Data Type|   |size|   |
-|---------|---|----|---|
-|`CHAR(n)`   |fixed length|1 ~ 2000 bytes|see `1`|
-|`VARCHAR2(n)`|variable(max) length|1 ~ 4000 bytes|see `2`|
-|`NCHAR(n)`| | | |
-|`NVARCHAR(n)`| | | |
+|Data Type|Contents|Size|
+|---------|--------|----|
+|`CHAR(n)`   |fixed length|1 ~ 2000 bytes|
+|`VARCHAR2(n)`|variable(max) length|1 ~ 4000 bytes|
+|`NCHAR(n)`| | |
+|`NVARCHAR(n)`| | |
 
 *n: numeric parameter denoting the size of the data type*  
 
@@ -43,8 +43,6 @@ Oracle returns an error.
 
 **VARCHAR2**  
 `VARCHAR2` type has a variable length for any rows of the table.  
-*(You can check the byte size of a column with `vsize(column_name)` function)*
-
 This means when the input value for this column is shorter than the fixed length,  
 Oracle resizes the column of that specific row to the size of the input.  
 However, when the input value is longer than the initial length,  
@@ -61,6 +59,7 @@ INSERT INTO test_char VALUES (1, 'A', 'A');
 INSERT INTO test_char VALUES (2, 'BBB', 'BBB');
 SELECT char_type, vsize(char_type), varchar_type, vsize(varchar_type) from test_char;
 ```
+*(You can check the byte size of a column with `vsize(column_name)` function)*  
 
 `OUTPUT:`  
 
@@ -78,7 +77,7 @@ INSERT INTO test_char VALUES (3, 'BBBB', 'BBBB');
 `OUTPUT:`  
 ORA-12899: value too large for column  
 
-*When should CHAR or VARCHAR2 be used?*
+*+ When should CHAR or VARCHAR2 be used?*  
 Use CHAR datatype when it is absolutely necessary to compare exact fixed-length of a text (including possible white spaces).  
 (e.g. sending formatted data)  
 For other uses, VARCHAR2 is preferred as it saves un-used spaces while allowing flexibility to assign maximum length.  
@@ -87,6 +86,6 @@ For other uses, VARCHAR2 is preferred as it saves un-used spaces while allowing 
 
 Because Oracle provides multi-language support,  
 using byte semantics and character semantics can yield different results.  
-For numbers, symbols and the English alphabet, 1 character equals 1 byte.
-For other languages, 1 character can take up more than 1 byte.
+For numbers, symbols and the English alphabet, 1 character equals 1 byte.  
+For other languages, 1 character can take up more than 1 byte.  
 (e.g.)  
