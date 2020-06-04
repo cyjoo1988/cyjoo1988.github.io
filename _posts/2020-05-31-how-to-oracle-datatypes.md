@@ -32,10 +32,6 @@ Note that character sets (e.g. ASCII, UTF-8) are already designated when creatin
 |`NVARCHAR(n)`| | | |
 
 *n: numeric parameter denoting the size of the data type*  
-1: If the input (insert, update) value is shorter than the fixed length, Oracle fills the rest with blank-padding.  
-   If the input value is greater, Oracle returns an error.  
-2: If the input value is shorter than the initial length, Oracle resizes the length of that specific row to match the length of the value.  
-If the input value is greater, Oracle returns an error.
 
 #### 2-1. CHAR vs VARCHAR2 ####  
 **CHAR**  
@@ -47,7 +43,7 @@ Oracle returns an error.
 
 **VARCHAR2**  
 `VARCHAR2` type has a variable length for any rows of the table.  
-*You can check the byte size of a column with `vsize(column_name)` function*
+*(You can check the byte size of a column with `vsize(column_name)` function)*
 
 This means when the input value for this column is shorter than the fixed length,  
 Oracle resizes the column of that specific row to the size of the input.  
@@ -80,17 +76,17 @@ SELECT char_type, vsize(char_type), varchar_type, vsize(varchar_type) from test_
 INSERT INTO test_char VALUES (3, 'BBBB', 'BBBB'); 
 ```
 `OUTPUT:`  
-ORA-12899: value too large for column
-    
-    
+ORA-12899: value too large for column  
 
-* DATA TYPE: `VARCHAR(3)`  
-* INPUT1: `A`  
-* RESULT1: `A`  
----
-* INPUT2: `ABC`
-* RESULT2: `ABC`
----
-* INPUT3: `ABCD`
-* RESULT3: ORA-12899: value too large for column
+*When should CHAR or VARCHAR2 be used?*
+Use CHAR datatype when it is absolutely necessary to compare exact fixed-length of a text (including possible white spaces).  
+(e.g. sending formatted data)  
+For other uses, VARCHAR2 is preferred as it saves un-used spaces while allowing flexibility to assign maximum length.  
 
+#### 2-1. BYTE vs CHARACTER semantics ####  
+
+Because Oracle provides multi-language support,  
+using byte semantics and character semantics can yield different results.  
+For numbers, symbols and the English alphabet, 1 character equals 1 byte.
+For other languages, 1 character can take up more than 1 byte.
+(e.g.)  
