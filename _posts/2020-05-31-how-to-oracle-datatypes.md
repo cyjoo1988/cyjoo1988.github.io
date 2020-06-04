@@ -37,4 +37,40 @@ Note that character sets (e.g. ASCII, UTF-8) are already designated when creatin
 2: If the input value is shorter than the initial length, Oracle resizes the length of that specific row to match the length of the value.  
 If the input value is greater, Oracle returns an error.
 
+#### 2-1. CHAR vs VARCHAR2 ####  
+**CHAR**  
+`CHAR` type has a fixed length for all rows of the table.  
+This means when the input value for this column is shorter than the fixed length,  
+Oracle automatically fills the empty space with left-padding.  
+When the input value is longer than the fixed length,  
+Oracle returns an error.  
+
+ex)  
+* DATA TYPE: `CHAR(3)`  
+* INPUT1 : `A`  
+* RESULT1: `A  `  
+---
+* INPUT2 : `ABC`
+* RESULT2: `ABC`
+---
+* INPUT3 : `ABCD`
+* RESULT3: ORA-12899: value too large for column
+
+**VARCHAR2**  
+`VARCHAR2` type has a variable length for any rows of the table.  
+This means when the input value for this column is shorter than the fixed length,  
+Oracle resizes the column of that specific row to the size of the input.  
+However, when the input value is longer than the initial length,  
+Oracle returns the same error as in `CHAR` .  
+
+ex)  
+* DATA TYPE: `VARCHAR(3)`  
+* INPUT1 : `A`  
+* RESULT1: `A`  
+---
+* INPUT2 : `ABC`
+* RESULT2: `ABC`
+---
+* INPUT3 : `ABCD`
+* RESULT3: ORA-12899: value too large for column
 
