@@ -78,21 +78,37 @@ INSERT INTO test_char VALUES (3, 'BBBB', 'BBBB');
 ORA-12899: value too large for column  
 
 *+ When should CHAR or VARCHAR2 be used?*  
-Use CHAR datatype when it is absolutely necessary to compare exact fixed-length of a text (including possible white spaces).  
+Use `CHAR` datatype when it is absolutely necessary to compare exact fixed-length of a text (including possible white spaces).  
 (e.g. sending formatted data)  
-For other uses, VARCHAR2 is preferred as it saves un-used spaces while allowing flexibility in assigning maximum length.  
+For other uses, **`VARCHAR2` is preferred** as it saves un-used spaces while allowing flexibility in assigning maximum length.  
 
 *+ BYTE vs CHARACTER semantics*  
-Because Oracle provides multi-language support,  
-using byte semantics and character semantics can yield different results.  
-Byte semantics are by default semantics for character types.
+Because Oracle provides multi-language support, using byte semantics and character semantics can yield different results.  
+Byte semantics are the default semantics for character types.
 For numbers, symbols and the English alphabet, 1 character equals 1 byte.  
 For other languages, 1 character can take up to 3 bytes.  
 For example, using UTF-8 character set, if you need a column that can store maximun of 10 characters, you can designate its size by either of the following:  
-+ Byte semantics: VARCHAR2(30 bytes)  
++ Byte semantics: VARCHAR2(30 bytes) *(= 3bytes * 10 characters)*
 + Character semantics: VARCHAR2(10 char)  
 
 
 #### 2-2. CHAR(VARCHAR2) vs NCHAR(NVARCHAR2) ####  
-The size of CHAR or VARCHAR2 types can be set in either bytes or characters.  
+As shown above, the size of `CHAR` or `VARCHAR2` types can be set in either bytes or characters.  
+As for `NCHAR` or `NVARCHAR2` types, the size is always set in character semantics.  
+Whereas `CHAR` or `VARCHAR2` types can support various types of character sets,  
+`NCHAR` or `NVARCHAR2` types only support Unicode character sets `UTF-8` and `AL16UTF16`.  
+
+# 3.Numeric types
+
+# 4.Date types
+
+# 5.LOB types
+
+LOB data types store large blocks of unstructured data. i.e.large volume of text, images, sounds, videos, etc.  
+LOB types are specified into `BLOB`, `CLOB`, and `NLOB`.  
+
+Oracle recommends using LOB types over `Long` or `Long Raw` types for following reasons:  
+
+
+# 6.ROWID types
 
