@@ -24,12 +24,12 @@ Oracle supports data types that fall into following categories:
 Character data types store alphanumeric values.   
 Note that character sets (e.g. ASCII, UTF-8) are already designated when creating the database.  
 
-|Data Type|Contents|Size|
-|---------|--------|----|
-|`CHAR(n)`   |fixed length|1 ~ 2000 bytes|
-|`VARCHAR2(n)`|variable(max) length|1 ~ 4000 bytes|
-|`NCHAR(n)`| | |
-|`NVARCHAR(n)`| | |
+|Data Type|Contents|Max Size|Length Semantics|
+|---------|--------|----|----------------|
+|`CHAR(n)`   |fixed length|2000 bytes|byte or character|
+|`VARCHAR2(n)`|variable(max) length|4000 bytes|byte or character|
+|`NCHAR(n)`|fixed length|2000 bytes (2000 characters)|character only|
+|`NVARCHAR(n)`|varaiable length|4000 bytes (4000 characters)|character only|
 
 *n: numeric parameter denoting the size of the data type*  
 
@@ -57,16 +57,16 @@ CREATE TABLE test_char (
 
 INSERT INTO test_char VALUES (1, 'A', 'A');
 INSERT INTO test_char VALUES (2, 'BBB', 'BBB');
-SELECT char_type, vsize(char_type), varchar_type, vsize(varchar_type) from test_char;
+SELECT test_case, char_type, vsize(char_type), varchar_type, vsize(varchar_type) from test_char;
 ```
 *(You can check the byte size of a column with `vsize(column_name)` function)*  
 
 `OUTPUT:`  
 
-|CHAR_TYPE|VSIZE(CHAR_TYPE)|VARCHAR_TYPE|VSIZE(VARCHAR_TYPE)|
-|---------|----------------|------------|-------------------|
-|A|3|A|1|
-|BBB|3|BBB|3|
+|TEST_CASE|CHAR_TYPE|VSIZE(CHAR_TYPE)|VARCHAR_TYPE|VSIZE(VARCHAR_TYPE)|
+|---------|---------|----------------|------------|-------------------|
+|1|A|3|A|1|
+|2|BBB|3|BBB|3|
 
 
 ---
@@ -80,12 +80,19 @@ ORA-12899: value too large for column
 *+ When should CHAR or VARCHAR2 be used?*  
 Use CHAR datatype when it is absolutely necessary to compare exact fixed-length of a text (including possible white spaces).  
 (e.g. sending formatted data)  
-For other uses, VARCHAR2 is preferred as it saves un-used spaces while allowing flexibility to assign maximum length.  
+For other uses, VARCHAR2 is preferred as it saves un-used spaces while allowing flexibility in assigning maximum length.  
 
-#### 2-1. BYTE vs CHARACTER semantics ####  
-
+*+ BYTE vs CHARACTER semantics*  
 Because Oracle provides multi-language support,  
 using byte semantics and character semantics can yield different results.  
+Byte semantics are by default semantics for character types.
 For numbers, symbols and the English alphabet, 1 character equals 1 byte.  
-For other languages, 1 character can take up more than 1 byte.  
-(e.g.)  
+For other languages, 1 character can take up to 3 bytes.  
+For example, using UTF-8 character set, if you need a column that can store maximun of 10 characters, you can designate its size by either of the following:  
++ Byte semantics: VARCHAR2(30 bytes)  
++ Character semantics: VARCHAR2(10 char)  
+
+
+#### 2-2. CHAR(VARCHAR2) vs NCHAR(NVARCHAR2) ####  
+The size of CHAR or VARCHAR2 types can be set in either bytes or characters.  
+
